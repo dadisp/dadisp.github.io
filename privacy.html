@@ -31,6 +31,7 @@
     <ul>
       <li><strong>Google and YouTube:</strong> the channel's ID and name, and an OAuth refresh token. Agm sends YouTube the videos, titles, descriptions and tags the owner schedules. Short-lived access tokens are requested when needed and are not stored. Agm does not read the channel's videos, comments or analytics.</li>
       <li><strong>Facebook and Instagram:</strong> the Page's ID and name, the Instagram account's ID and username, and access tokens. Photos for Instagram are first uploaded to the linked Page as unpublished photos so that Instagram can read them, and are deleted afterwards.</li>
+      <li><strong>Threads:</strong> the profile's ID and username, and an access token. Agm renews this token automatically so that it keeps working. Photos for Threads are first uploaded to a connected Facebook Page as unpublished photos so that Threads can read them, and are deleted afterwards. After signing in, Threads returns to a small page on this website, <a href="threads-callback.html">threads-callback.html</a>, which only passes the reply on to Agm on the owner's computer and stores nothing.</li>
       <li><strong>Telegram:</strong> the owner's chat ID, the bot token, and the messages the owner sends to the bot.</li>
       <li><strong>The owner's content:</strong> post text, schedules and media files.</li>
     </ul>
@@ -54,7 +55,7 @@
     <p>Data stays on the owner's computer until the owner removes it. Removing an account in Agm deletes its stored token and its posts from the local database. This does not affect anything stored by YouTube or other platforms: videos already uploaded stay there and must be removed on that platform.</p>
 
     <h2>Revoking access</h2>
-    <p>You can revoke Agm's access to your Google data at any time on the <a href="https://security.google.com/settings/security/permissions">Google security settings page</a>. Removing an account in Agm does not do this by itself. For Facebook and Instagram, remove the app under Business Integrations in your Facebook settings.</p>
+    <p>You can revoke Agm's access to your Google data at any time on the <a href="https://security.google.com/settings/security/permissions">Google security settings page</a>. Removing an account in Agm does not do this by itself. For Facebook and Instagram, remove the app under Business Integrations in your Facebook settings. For Threads, remove it under Website permissions in your Threads settings.</p>
 
     <h2>Contact</h2>
     <p>For privacy questions or complaints, <a href="https://github.com/dadisp/dadisp.github.io/issues">open an issue on GitHub</a>. Issues are public, so please do not include tokens or personal details.</p>
@@ -76,6 +77,7 @@
       <ul>
         <li><strong>Google dan YouTube:</strong> ID dan nama channel, serta refresh token OAuth. Agm mengirim ke YouTube video, judul, deskripsi, dan tag yang dijadwalkan pemilik. Token akses berumur pendek diminta saat dibutuhkan dan tidak disimpan. Agm tidak membaca video, komentar, atau analitik channel.</li>
         <li><strong>Facebook dan Instagram:</strong> ID dan nama Page, ID dan nama pengguna Instagram, serta token akses. Foto untuk Instagram diunggah dulu ke Page yang tertaut sebagai foto yang tidak diterbitkan agar bisa dibaca Instagram, lalu dihapus.</li>
+        <li><strong>Threads:</strong> ID dan nama pengguna profil, serta token akses. Agm memperbarui token ini otomatis agar tetap berlaku. Foto untuk Threads diunggah dulu ke Page Facebook yang terhubung sebagai foto yang tidak diterbitkan agar bisa dibaca Threads, lalu dihapus. Setelah login, Threads kembali ke halaman kecil di situs ini, <a href="threads-callback.html">threads-callback.html</a>, yang hanya meneruskan balasan itu ke Agm di komputer pemilik dan tidak menyimpan apa pun.</li>
         <li><strong>Telegram:</strong> ID chat pemilik, token bot, dan pesan yang dikirim pemilik ke bot.</li>
         <li><strong>Konten pemilik:</strong> teks post, jadwal, dan file media.</li>
       </ul>
@@ -99,7 +101,7 @@
       <p>Data tetap ada di komputer pemilik sampai pemilik menghapusnya. Menghapus akun di Agm menghapus token dan post akun itu dari database lokal. Ini tidak memengaruhi data yang tersimpan di YouTube atau platform lain: video yang sudah diunggah tetap ada di sana dan harus dihapus di platform tersebut.</p>
 
       <h2>Mencabut akses</h2>
-      <p>Anda bisa mencabut akses Agm ke data Google kapan saja di <a href="https://security.google.com/settings/security/permissions">halaman setelan keamanan Google</a>. Menghapus akun di Agm tidak otomatis mencabut akses ini. Untuk Facebook dan Instagram, hapus aplikasinya di bagian Integrasi Bisnis pada pengaturan Facebook.</p>
+      <p>Anda bisa mencabut akses Agm ke data Google kapan saja di <a href="https://security.google.com/settings/security/permissions">halaman setelan keamanan Google</a>. Menghapus akun di Agm tidak otomatis mencabut akses ini. Untuk Facebook dan Instagram, hapus aplikasinya di bagian Integrasi Bisnis pada pengaturan Facebook. Untuk Threads, hapus di bagian Izin situs web pada pengaturan Threads.</p>
 
       <h2>Kontak</h2>
       <p>Untuk pertanyaan atau keluhan soal privasi, <a href="https://github.com/dadisp/dadisp.github.io/issues">buat issue di GitHub</a>. Issue bersifat publik, jadi jangan sertakan token atau data pribadi.</p>

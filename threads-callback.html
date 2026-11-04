@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <meta name="referrer" content="no-referrer">
+  <title>Connecting Threads - Agm</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Returning to Agm</h1>
+    <p>Threads sends its sign-in reply to a public address, but Agm runs on the owner's own computer. This page only passes that reply on to Agm. It stores nothing.</p>
+    <p><a id="next" href="http://localhost:20141/api/threads/callback">Continue to Agm</a></p>
+  </main>
+  <script>
+    var next = 'http://localhost:20141/api/threads/callback' + window.location.search;
+    document.getElementById('next').href = next;
+    window.location.replace(next);
+  </script>
+</body>
+</html>
